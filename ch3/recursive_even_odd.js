@@ -1,5 +1,3 @@
-"use strict";
-exports.__esModule = true;
 function isEven(n) {
     if (n < 0) {
         return isEven(-n);
@@ -19,3 +17,4 @@ console.log(isEven(75));
 console.log(isEven(-1));
 console.log(isEven(0));
 console.log(isEven(-153000)); // Should crash
+export {};

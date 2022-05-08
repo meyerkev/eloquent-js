@@ -1,13 +1,10 @@
-"use strict";
-exports.__esModule = true;
-exports.minimum = void 0;
+export { minimum };
 function minimum(a, b) {
     if (a < b) {
         return a;
     }
     return b;
 }
-exports.minimum = minimum;
 console.log(minimum(1, 2));
 console.log(minimum(2, 1));
 console.log(minimum(2, 2));

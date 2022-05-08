@@ -1,12 +1,10 @@
-"use strict";
-exports.__esModule = true;
 function fizzBuzz(n) {
-    for (var i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         if ([1, 2, 4, 7, 8, 11, 13, 14].includes(i % 15)) {
             console.log(i);
             continue;
         }
-        var output = "";
+        let output = "";
         if (i % 3 === 0) {
             output += "Fizz";
         }
@@ -20,3 +18,4 @@ function fizzBuzz(n) {
     }
 }
 fizzBuzz(100);
+export {};
