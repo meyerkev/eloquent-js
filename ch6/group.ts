@@ -29,19 +29,6 @@ class Group {
     }
 }
 
-class GroupIterator {
-    group: Group;
-    index: number;
-    constructor(group: Group) {
-        this.group = group;
-        this.index = -1;  // Notice the ++ in next()
-    }
-    next() {
-        let member = this.group.members[++this.index];
-        return { value: member, done: member === undefined };
-    }
-}
-
 function main() {
     let group = new Group();
     group.add('a');
